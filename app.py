@@ -87,19 +87,19 @@ def main():
             st.session_state.conversation = None
         if "chat_history" not in st.session_state:
             st.session_state.chat_history = None
-    with st.container():
-        st.write(user_template.replace("{{MSG}}", "Hiiii"), unsafe_allow_html=True)
-        st.write(ai_template.replace("{{MSG}}", "Hiiii"), unsafe_allow_html=True)
-        st.write(user_template.replace("{{MSG}}", "Hiiii"), unsafe_allow_html=True)
-        st.write(ai_template.replace("{{MSG}}", "Hiiii"), unsafe_allow_html=True)
-        st.write(user_template.replace("{{MSG}}", "Hiiii"), unsafe_allow_html=True)
-        st.write(ai_template.replace("{{MSG}}", "Hiiii"), unsafe_allow_html=True)
-        st.write(user_template.replace("{{MSG}}", "Hiiii"), unsafe_allow_html=True)
-        st.write(ai_template.replace("{{MSG}}", "Hiiii"), unsafe_allow_html=True)
-        st.write(user_template.replace("{{MSG}}", "Hiiii"), unsafe_allow_html=True)
-        st.write(ai_template.replace("{{MSG}}", "Hiiii"), unsafe_allow_html=True)
-        st.write(user_template.replace("{{MSG}}", "Hiiii"), unsafe_allow_html=True)
-        st.write(ai_template.replace("{{MSG}}", "Hiiii"), unsafe_allow_html=True)
+    # with st.container():
+    #     st.write(user_template.replace("{{MSG}}", "Hiiii"), unsafe_allow_html=True)
+    #     st.write(ai_template.replace("{{MSG}}", "Hiiii"), unsafe_allow_html=True)
+    #     st.write(user_template.replace("{{MSG}}", "Hiiii"), unsafe_allow_html=True)
+    #     st.write(ai_template.replace("{{MSG}}", "Hiiii"), unsafe_allow_html=True)
+    #     st.write(user_template.replace("{{MSG}}", "Hiiii"), unsafe_allow_html=True)
+    #     st.write(ai_template.replace("{{MSG}}", "Hiiii"), unsafe_allow_html=True)
+    #     st.write(user_template.replace("{{MSG}}", "Hiiii"), unsafe_allow_html=True)
+    #     st.write(ai_template.replace("{{MSG}}", "Hiiii"), unsafe_allow_html=True)
+    #     st.write(user_template.replace("{{MSG}}", "Hiiii"), unsafe_allow_html=True)
+    #     st.write(ai_template.replace("{{MSG}}", "Hiiii"), unsafe_allow_html=True)
+    #     st.write(user_template.replace("{{MSG}}", "Hiiii"), unsafe_allow_html=True)
+    #     st.write(ai_template.replace("{{MSG}}", "Hiiii"), unsafe_allow_html=True)
 
 
     with st.sidebar:
