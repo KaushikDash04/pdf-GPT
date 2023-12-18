@@ -30,7 +30,7 @@ def get_text_chunks(text):
     return chunks
 
 def get_vectore_stote(text_chunks):
-    embeddings = HuggingFaceInstructEmbeddings(model_name="BAAI/bge-large-en-v1.5")
+    embeddings = HuggingFaceInstructEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
     # embeddings = OpenAIEmbeddings()
     vectorstore = faiss.FAISS.from_texts(texts=text_chunks, embedding=embeddings)
     return vectorstore
