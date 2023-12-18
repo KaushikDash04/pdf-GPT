@@ -70,6 +70,10 @@ def main():
         .stTextInput {{
         position: fixed;
         bottom: 3rem;
+        z-index: 1;
+        padding: 20px;
+        background-color: #AAAAAA;
+        border-radius: 15px;
         }}
     </style>
     """
@@ -77,7 +81,7 @@ def main():
     st.markdown(styl, unsafe_allow_html=True)
 
     with st.container():
-        user_question = st.text_input("Ask a question about your documents:")
+        user_question = st.text_input(label = "", label_visibility="collapsed", disabled=False, placeholder="Ask a question about your documents:")
         if user_question:
             handle_user_input(user_question)
 
